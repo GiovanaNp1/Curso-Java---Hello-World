@@ -22,4 +22,4 @@ public class ValorPositivo {
 }
 
 //2 - Faça  um Programa  que  peça  um  valor  e  mostre  na  tela  se  o  valor 
-//é positivo ou negativo
+//é positivo ou negativo - COMPLETADO

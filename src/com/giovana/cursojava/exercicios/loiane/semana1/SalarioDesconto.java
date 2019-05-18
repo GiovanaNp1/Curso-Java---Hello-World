@@ -3,16 +3,28 @@ package com.giovana.cursojava.exercicios.loiane.semana1;
 import java.util.Scanner;
 
 public class SalarioDesconto {
-    public static void main(String[] args){
-
+	public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Quanto você ganha por mês?");
-        double Salario = scan.nextInt();
-        int percentualImposto = 100 / 11;
-        double valorImposto = Salario - percentualImposto * Salario;
-
-        System.out.println("o imposto descontado do seu salario é " + valorImposto);
+        System.out.println("Insira aqui o quanto você ganha por hora: ");
+        int ganhoHora = scan.nextInt();
+        System.out.println("Insira aqui o quanto número de horas trabalhadas no mês:");
+        int horaMes = scan.nextInt();
+        
+        int salarioBruto = ganhoHora * horaMes;
+        double inss = (salarioBruto / 100) * 8;
+        double sindicato = (salarioBruto / 100) * 5;
+        double ir = (salarioBruto / 100) * 11;
+        double totalDesconto = inss + sindicato + ir;
+        double salarioLiquido = salarioBruto - totalDesconto;
+        
+        
+        System.out.println("Salario Bruto: " + salarioBruto);
+        System.out.println("INSS: " + inss);
+        System.out.println("Sindicato: " + sindicato);
+        System.out.println("Imposto de Renda: " + ir);
+        System.out.println("Salario liquido: " + salarioLiquido);
+        
     }
 }
 
@@ -23,4 +35,4 @@ public class SalarioDesconto {
 //.saláriobruto.a.quanto pagou ao INSS.b.quanto pagou ao sindicato.
 //c.o salário líquido.d.calcule  os  descontos  e  o  salário  líquido,  conforme  a  tabela abaixo:
 //+  Salário  Bruto  :  R$ -IR  (11%)  :  R$ -INSS 
-//(8%)  :  R$ -Sindicato  (  5%)  :  R$  =  Salário Liquido : R$
+//(8%)  :  R$ -Sindicato  (  5%)  :  R$  =  Salário Liquido : R$ - CONCLUIDO

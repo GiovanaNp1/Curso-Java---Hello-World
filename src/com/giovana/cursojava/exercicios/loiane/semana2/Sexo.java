@@ -10,9 +10,9 @@ public class Sexo {
 		System.out.println("Insira aqui seu sexo: ");
 		String genero = scan.next();
 		
-		if(genero = "F") {
+		if(genero.equalsIgnoreCase ("F")) {
 			System.out.println("Seu sexo é Feminino");
-		} if else (genero = "M") {
+		} else if (genero.equalsIgnoreCase("M")) {
 			System.out.println("Seu sexo é Masculino");
 		} else {
 		    System.out.println("Sexo indefinido");
@@ -21,3 +21,7 @@ public class Sexo {
 	}
 
 }
+
+
+//3. Faça um Programa que verifique se uma letra digitada é "F" ou "M". 
+//Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido. - COMPLETADO

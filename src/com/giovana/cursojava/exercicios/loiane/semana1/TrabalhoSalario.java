@@ -11,7 +11,7 @@ public class TrabalhoSalario {
         int ganhoHora = scan.nextInt();
         System.out.println("Insira aqui o quanto número de horas trabalhadas no mês:");
         int horaMes = scan.nextInt();
-        int salario = ganhoHora * horaMes * 30;
+        int salario = ganhoHora * horaMes;
         System.out.println("Você ganha por mês: " + salario);
     }
 }

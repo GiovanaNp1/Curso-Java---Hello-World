@@ -14,7 +14,7 @@ public class Produto {
 
         int primeirapartea = numeroInt1 * 2;
         int segundapartea = numeroInt2 / 2;
-        float partea = primeirapartea + segundapartea;
+        float partea = primeirapartea * segundapartea;
 
         int prmeiraparteb = numeroInt1 * 3;
         float parteb =  primeirapartea + numeroReal;
